@@ -132,6 +132,7 @@ a{
     background-color: var(--color-white);
     margin-bottom: 4px;
 }
+/*menu mobile*/
 @media al and (max-width: 600px){
 .menu{
     display: block;
@@ -170,5 +171,32 @@ a{
    padding-right: 0;
    font-family: 'Montserrat', sans-serif;
    color: var(--color-white);
+}
+.navbar{
+    flex-direction: column;
+    position: relative;
+}
+.navbar #logo{
+    width: 100%;
+}
+.menu{
+    display: block;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
+.nav-lista{
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.nav-lista .lista{
+    display: block;
+    border-top: 1px solid white;
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 10px;
 }
 }
