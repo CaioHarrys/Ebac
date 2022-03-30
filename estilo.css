@@ -101,7 +101,7 @@ a{
     position: relative;
     overflow: hidden;
   }
-  #underline:after {
+#underline:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -123,7 +123,7 @@ a{
     width: 100%;
   }
 
-  .menu {
+.menu {
       display: none;
   }
 .menu-line {
@@ -131,6 +131,7 @@ a{
     height: 3px;
     background-color: var(--color-white);
     margin-bottom: 4px;
+    border-radius: 10px;
 }
 /*menu mobile*/
 @media al and (max-width: 600px){
@@ -173,17 +174,20 @@ a{
    color: var(--color-white);
 }
 .navbar{
+    width: 100%;
     flex-direction: column;
     position: relative;
 }
-.navbar .icon-primeiro{
-    width: 100%;
-}
+
 .menu{
     display: block;
     position: absolute;
     right: 15px;
     top: 15px;
+}
+.menu:hover > .menu-line{
+   background-color: #F07241;
+   border-radius: 10px;
 }
 .nav-lista{
     flex-direction: column;
@@ -191,13 +195,26 @@ a{
     width: 100%;
     text-align: center;
     padding-top: 10px;
+    padding-right: 0px;
+}
+ul .nav-lista{
+    padding-right: 0;
+}
+.lista{
+    padding: 10px;
+}
+a:hover{
+    color: #F07241;
 }
 .nav-lista .lista{
-    border-top: 1px solid white;
+    width: 100%;
+    padding-right: 0px;
+    border: 0.3px solid rgba(255, 255, 255, 0.11);
+    background-color: #300030;
 }
 .icon-primeiro{
     margin-top: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 
 }
