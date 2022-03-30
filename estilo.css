@@ -67,7 +67,6 @@ body{
 }
 img{
     max-width: 100%;
-    width: 100%;
     height: auto;
 }
 a{
@@ -85,15 +84,16 @@ a{
   }
 .nav-lista{
     list-style: none;
+    width: 100%;
+    display: flex;
 
 }
 .nav-lista,.lista{
+    justify-content: flex-end;
     padding-right: 2.5em;
-    display: inline-block;
 }
-#logo{
+.icon-primeiro{
     height: 45px;
-    margin-left: 2.8em;
 }
 
 #underline {
@@ -176,7 +176,7 @@ a{
     flex-direction: column;
     position: relative;
 }
-.navbar #logo{
+.navbar .icon-primeiro{
     width: 100%;
 }
 .menu{
@@ -186,17 +186,18 @@ a{
     top: 15px;
 }
 .nav-lista{
+    flex-direction: column;
     list-style-type: none;
     width: 100%;
     text-align: center;
     padding-top: 10px;
 }
 .nav-lista .lista{
-    display: block;
     border-top: 1px solid white;
 }
-#logo{
+.icon-primeiro{
     margin-top: 10px;
     margin-left: 10px;
 }
+
 }
