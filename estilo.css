@@ -15,6 +15,7 @@
     --color-white:#f2f2f2;
     --color-light:#43AED9;
     --hover-color:#C04848;
+    --footer-color:rgba(10, 14, 61, 0.9);
 
     --font-family:'Montserrat', sans-serif;
 
@@ -32,12 +33,38 @@ body{
     display: flex;
     flex-direction: column;
 }
+footer{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--footer-color);
+}
+#footer-class{
+    color: var(--color-white);
+    font-family: var(--font-family);
+}
+.colunas{
+    margin-top: 10px;
+}
+.carrou{
+    display: flex;
+}
+.colunis{
+    justify-content: flex-end;
+    flex: 33.33%;
+    padding: 5px;
+}
 ::-webkit-scrollbar{
     display: none;
 }
 .container{
+    display: flex;
     margin-top:2em;
-    
 }
 .flex-container-1{
     display: flex;
@@ -145,9 +172,8 @@ a{
 }
 .com
 
-footer{
-    background-color: rgba(10, 14, 61, 0.9);
-    order: 4;
+.footer{
+    background-color: var(--footer-color);
     border-top: 1px black solid;
     margin-top: 10px;
     padding-top: 50px;
@@ -156,9 +182,9 @@ footer{
     bottom: 0;
     width: 100%;
 }
-.flex-container{
+.flex-contain{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
     justify-content: center;
     flex-direction: row;
     background-image: transparent;
@@ -167,6 +193,7 @@ footer{
     height: 50px;
 }
 .ft-item{
+    align-items: flex-end;
     margin-left: 20px;
     padding-left: 2rem;
     padding-right: 5rem;
@@ -174,6 +201,7 @@ footer{
     color: var(--color-white);
     margin-bottom:1em ;
 }
+
 /*menu mobile*/
 @media al and (max-width: 600px){
 .menu{
@@ -262,26 +290,5 @@ a:hover{
     margin-left: 0px;
 }
 
-footer{
-    background-color: rgba(255, 255, 255, 0.788);
-    order: 4;
-    border-top: 1px black solid;
-    padding-top: 50px;
-    margin-top:10px ;
-    text-align: center;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    display: inline-block;
-}
-.flex-container{
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-    flex-direction: row;
-    background-image: transparent;
-    margin-left: 5em;
-    margin-right: 5em;
-    height: 50px;
-}
+
 }
