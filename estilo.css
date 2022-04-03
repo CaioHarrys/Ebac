@@ -136,10 +136,15 @@ a{
     border-radius: 15px;
 }
 .conteudo-2{
+
     color: var(--color-white);
     width: 50%;
+    font-family: var(--font-family);
 }
+.conteudo-2>h1{
 
+    text-align: center;
+}
 /*menu mobile*/
 @media al and (max-width: 600px){
 .menu{
