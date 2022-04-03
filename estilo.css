@@ -52,8 +52,8 @@ a{
     font-family: var(--font-family);
 }
 .navbar{
-
       display: flex;
+      width: 100%;
       justify-content: space-between;
       align-items: baseline;
       height: 50px;
@@ -61,13 +61,14 @@ a{
   }
 .nav-lista{
     list-style: none;
-    width: 100%;
-    display: flex;
-
+    display:flex;
 }
 .nav-lista,.lista{
     justify-content: flex-end;
     padding-right: 2.5em;
+}
+.lista{
+    align-self: flex-end;
 }
 .icon-primeiro{
     height: 45px;
@@ -106,8 +107,10 @@ a{
     display: flex;justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
     height: 450px;
+    margin-left: 20vh;
+    margin-right: 20vh;
+    margin-top: 7vh;
 }
 .conteudo-1{
     color: var(--color-white);
@@ -151,7 +154,7 @@ a{
     align-self: center;
 }
 .conteudo-2-item-3{
-    align-self: center;
+    align-self: left;
     padding-top: 1rem;
 }
   button {
@@ -182,7 +185,6 @@ a{
   .svg:before{
     position:relative;  
     content:"";
-    
     width:100%;
     height:100%;
     top:0;
