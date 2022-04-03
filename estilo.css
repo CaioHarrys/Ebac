@@ -174,16 +174,16 @@ a{
   button {
     position: relative;
     display:block;
-    height: 45px;
-    width: 150px;
-    margin: 10px 7px;
-    padding: 5px 5px;
+    height: 40px;
+    width: 250px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-weight: 700;
     font-size: 15px;
     letter-spacing: 2px;
     color: var(--color-bg-variant);
     border: 2px var(--color-bg-variant) solid;
-    border-radius: 4px;
+    border-radius: 80px;
     text-transform: uppercase;
     outline: 0;
     overflow:hidden;
@@ -223,12 +223,14 @@ a{
   .svg:hover{
     color:white;
     border: 0px var(--hover-color) solid;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
   .svg:hover:before {
     opacity: .8;
   }
   .svg:hover:after {
     right: 0;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 /*menu mobile*/
 @media al and (max-width: 600px){
