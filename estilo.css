@@ -52,8 +52,7 @@ footer{
     display: none;
 }
 img{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
 }
 a{
     text-decoration: none;
@@ -121,12 +120,25 @@ a{
 }
 /*#####-----PRIMEIRA SEÇAO------######*/
 .caixa{
-    display: flex;
+    display: flex;justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 450px;
 }
-.conteudo{
+.conteudo-1{
     color: var(--color-white);
+    width: 50%;
 }
-
+.conteudo-1>img{
+    width: 100%;
+    height: 450px;
+    border-radius: 15px;
+}
+.conteudo-2{
+    color: var(--color-white);
+    width: 50%;
+}
 
 /*menu mobile*/
 @media al and (max-width: 600px){
