@@ -176,7 +176,7 @@ a{
     -moz-transition:    0.08s ease-in;
     -webkit-transition: 0.08s ease-in;
   }
-  .svg:before{
+  .botonis:before{
     position:relative;  
     content:"";
     width:100%;
@@ -185,10 +185,10 @@ a{
     left:0;
     z-index:-1;
     opacity:0;
-    -webkit-transition: all 250ms cubic-bezier(0.230, 0.320, 1.000, 1.000);
+    -webkit-transition: all 350ms cubic-bezier(0.230, 0.320, 1.000, 1.000);
   }
   
-  .svg:after {
+  .botonis:after {
     content: "";
     position: absolute;
     background: var(--hover-color);
@@ -197,17 +197,17 @@ a{
     right: 100%;
     top: 0;
     z-index: -2;
-    -webkit-transition: all 250ms cubic-bezier(0.230, 0.320, 1.000, 1.000); 
+    -webkit-transition: all 350ms cubic-bezier(0.230, 0.320, 1.000, 1.000); 
   }
-  .svg:hover{
+  .botonis:hover{
     color:white;
     border: 0px var(--hover-color) solid;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
-  .svg:hover:before {
+  .botonis:hover:before {
     opacity: .8;
   }
-  .svg:hover:after {
+  .botonis:hover:after {
     right: 0;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
@@ -328,6 +328,7 @@ align-self: flex-start;
     align-self: center;
     border-top:dotted;
     border-color: var(--color-white);
+    margin-bottom: 0.5em;
 }
 .footer-end-text>p{
     color: var(--color-white);
