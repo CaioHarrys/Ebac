@@ -400,14 +400,94 @@ align-self: flex-start;
     flex-direction:row;
     justify-content: space-evenly;
 }
-.form-elements>input{
+.form-elements-stack{
     width: 50%;
+    padding: 20px;
 }
-.form-elements>label{
+.form-elements-stack>input{
+    color: rgba(54, 54, 54, 0.5);
+    font-family: var(--font-family);
+    background-color: transparent;
+    border-bottom: 1px solid rgba(0, 0, 255, 0.233);
+    width: 100%;
+    height: auto;
+}
+.form-elements-stack:hover>input{
+    color: black;
+    font-family: var(--font-family);
+    background-color: transparent;
+    border-bottom: 1px solid rgb(0, 0, 255);
+    width: 100%;
+    height: auto;
+}
+.form-elements-stack>label{
+    color: #0c46f285;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+}
+.form-elements-stack:hover>label{
+    color: #0C46F2;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
 }
 .form-elements-stack{
     display: flex;
     flex-direction: column;
+}
+.form-elements-chose{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    align-items: center;
+}
+.form-elements-chose>label{
+    padding-left: 10px;
+    color: #480048;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 500;
+}
+.form-elements-chose>#vehicle1{
+    height: 25px;
+    width: 25px;
+}
+input[type="checkbox"]{
+    appearance: none;
+    background-color: rgba(255, 255, 255, 0);
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.1em solid currentColor;
+    border-radius: 0.15em;
+    transform: translateY(-0.075em);
+}
+#testando{
+    border-radius: 50%;
+}
+.form-elements-texto-chose{
+    width: 100%;
+}
+.form-elements-2{
+    display: flex;
+    flex-direction: column;
+}
+.form-elements-2-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.form-elements-texto{
+    color: black;
+    font-family: var(--font-family);
+    font-size: 12px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
  /*######------footer------######*/
  footer{
