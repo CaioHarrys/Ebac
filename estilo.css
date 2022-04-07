@@ -277,7 +277,6 @@ align-self: flex-start;
  /*######------TERCEIRA SECAO------######*/
 .container-contato{
     display: flex;
-    background-color: var(--color-white);
     justify-content: center;
     align-items: center;
 
@@ -347,7 +346,7 @@ align-self: flex-start;
     font-size: 2rem;
 }
 .lado-direito{
-    background-color: #F2CEE9;
+    background-color: whitesmoke;
     width: 60%;
     display: flex;
     margin-right: 5vh;
