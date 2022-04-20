@@ -111,12 +111,16 @@ a{
     justify-content: space-between; /*Adds space between each child of a flex container.*/
     padding-block: 15px; /*Padding top and bottom*/
 }
+
 .navbar a{
     text-decoration: none;
     color: inherit; /*Inherits the same color as the parent element or grandparent (the body) unless you set the color to the navbar.*/
 }
 .logo{
     margin-right: 50px;
+}
+.logo>img{
+    width: 64px;
 }
 .list{
     margin-right: 20px;
@@ -740,6 +744,9 @@ input[type="checkbox"]::before {
     }
     .conteudo-1, .conteudo-2 {
       flex: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-bottom: 25px;
     }
     .caixa{
         height: fit-content;
@@ -758,8 +765,8 @@ input[type="checkbox"]::before {
     .colunitas{
         display: flex;
         margin-top: 2vh;
-        margin-left: 0vh;
-        margin-right: 0vh;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-bottom: 2vh;
     }
     .colun{
