@@ -130,6 +130,37 @@ a{
     display: none;/*Hide the checkbox and label on large screens.*/
 }
 
+.hamburger{
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/* General styles for the lines */
+.hamburger .line{
+    display: block;
+    width: 20px;
+    height: 1px;
+    background-color: #fff;
+    margin-block: 10px; /*Adds separation to the bottom and the bottom*/
+    border-radius: 4px;
+    transition: transform .5s,
+    opacity .25s;
+}
+/* Selecting the lines individually to add different effects when the active class is added to the hamburger menu.*/
+.hamburger.active .line:nth-child(1){
+    transform: translateY(13px)
+    rotate(45deg); /*Moves down this line 13px and rotates it 45 degrees to create the X*/
+}
+.hamburger.active .line:nth-child(2){
+    opacity: 0; /*Hides this line.*/
+}
+.hamburger.active .line:nth-child(3){
+    transform: translateY(-13px)
+    rotate(-45deg); /*Moves up this line 13px and rotates it -45 degrees to create the X*/
+}  
+
 /*#####-----PRIMEIRA SEÇAO------######*/
 .caixa{
     display: flex;
@@ -737,5 +768,54 @@ input[type="checkbox"]::before {
         flex-direction: column;
         flex: 100%;
         padding: 5px;
+    }
+    .lado-esquerdo>h1{
+        color: var(--color-white);
+        font-family: var(--font-family);
+        font-size: 18px;
+        padding-bottom: 1em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .lado-esquerdo>p{
+        color: var(--color-white);
+        font-family: var(--font-family);
+        font-size: 12px;
+        font-weight: 200;
+        padding-bottom: 0.5em;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .lado-esquerdo{
+        background-color: #3321A6;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin-top: 5vh;
+        margin-bottom:0vh;
+        border-radius: 20px 20px 0px 0px;
+        padding-top:1em;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .container-contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    .lado-direito{
+        background-color: whitesmoke;
+        width: 100%;
+        display: flex;
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 5vh;
+        height:auto;
+        margin-top: 0;
+        border-radius:0px 0px 20px 20px;
+        flex-direction: column;
     }
   }
