@@ -106,15 +106,15 @@ a{
 
 .navbar{
     display: flex;
-    flex-wrap: wrap; /*Allows the children inside a flex container to wrap down onto the next line if there is not enough space.*/
-    align-items: center; /*Centers the children of a flex container vertically.*/
-    justify-content: space-between; /*Adds space between each child of a flex container.*/
-    padding-block: 15px; /*Padding top and bottom*/
+    flex-wrap: wrap; 
+    align-items: center; 
+    justify-content: space-between;
+    padding-block: 15px;
 }
 
 .navbar a{
     text-decoration: none;
-    color: inherit; /*Inherits the same color as the parent element or grandparent (the body) unless you set the color to the navbar.*/
+    color: inherit; 
 }
 .logo{
     margin-right: 50px;
@@ -127,11 +127,11 @@ a{
     color: #f2f2f2;
     list-style: none;
     display: flex;
-    gap: 25px; /*Applies right and bottom spacing between children inside a flex or grid container.*/
+    gap: 25px;
 }
 #toggler,
 .navbar label{
-    display: none;/*Hide the checkbox and label on large screens.*/
+    display: none;
 }
 
 .hamburger{
@@ -141,28 +141,28 @@ a{
     outline: none;
     cursor: pointer;
 }
-/* General styles for the lines */
+
 .hamburger .line{
     display: block;
     width: 20px;
     height: 1px;
     background-color: #fff;
-    margin-block: 10px; /*Adds separation to the bottom and the bottom*/
+    margin-block: 10px;
     border-radius: 4px;
     transition: transform .5s,
     opacity .25s;
 }
-/* Selecting the lines individually to add different effects when the active class is added to the hamburger menu.*/
+
 .hamburger.active .line:nth-child(1){
     transform: translateY(13px)
-    rotate(45deg); /*Moves down this line 13px and rotates it 45 degrees to create the X*/
+    rotate(45deg);
 }
 .hamburger.active .line:nth-child(2){
     opacity: 0; /*Hides this line.*/
 }
 .hamburger.active .line:nth-child(3){
     transform: translateY(-13px)
-    rotate(-45deg); /*Moves up this line 13px and rotates it -45 degrees to create the X*/
+    rotate(-45deg);
 }  
 
 /*#####-----PRIMEIRA SEÇAO------######*/
