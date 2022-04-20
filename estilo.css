@@ -722,23 +722,19 @@ input[type="checkbox"]::before {
 @media screen and (max-width: 600px) {
     .menu{
         width: 100%;
-        max-height: 0; /*Makes the max-height 0 to side the expanded menu.*/
-        overflow: hidden; /*Hides the overflowing content.*/
+        max-height: 0;
+        overflow: hidden;
     }
     .list{
-        flex-direction: column; /*Chances the direction of the flex container. By default it is a row so we change it to column in small screens.*/
+        flex-direction: column;
         align-items: center;
         padding: 20px;
     }
     .navbar label{
-        display: inline-flex; /*Makes it an inline flex container for the icon. Used for centering the icon inside this box.*/
+        display: inline-flex;
         align-items: center;
         cursor: pointer;
     }
-    /* 
-        The general sibling selector (~) selects all elements that are next siblings of #toggler.
-        In this case we target the .menu and we turn the height back to 100% to show the menu.
-    */
     #toggler:checked ~ .menu{
         max-height: 100%;
     }
