@@ -1,0 +1,12 @@
+<nav class="navbar">
+    <a href="#Logo" class="logo"><img src="./imagens/LOGO HARRYCOMP.svg" alt="Logo HC Company"></a>
+    <input type="checkbox" id="toggler">
+    <label for="toggler"><i class="fa fa-bars"></i></label>
+    <div class="menu">
+        <ul class="list">
+            <li><a href="#homis" id="underline">Home</a></li>
+            <li><a href="#servicon" id="underline">Serviço</a></li>
+            <li><a href="#contacton" id="underline">Contacto</a></li>
+        </ul>
+    </div>
+</nav>

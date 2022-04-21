@@ -53,105 +53,6 @@ a{
     width: 64px;
     position: absolute;
 }
-#menu {
-    z-index: 2;
-    width: 50%;
-  }
-  
-  #menu-bar {
-    width: 45px;
-    height: 40px;
-    margin: 30px 0 20px 20px;
-    cursor: pointer;
-  }
-  
-  .bar {
-    height: 5px;
-    width: 100%;
-    background-color: #DC052D;
-    display: block;
-    border-radius: 5px;
-    transition: 0.3s ease;
-  }
-  
-  #bar1 {
-    transform: translateY(-4px);
-  }
-  
-  #bar3 {
-    transform: translateY(4px);
-  }
-  
-  .nav {
-    transition: 0.3s ease;
-    display: none;
-  }
-  
-  .nav ul {
-    padding: 0 22px;
-  }
-  
-  .nav li {
-    list-style: none;
-    padding: 12px 0;
-  }
-  
-  .nav li a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-  }
-  
-  .nav li a:hover {
-    font-weight: bold;
-  }
-  
-  .menu-bg, #menu {
-    top: 0;
-    left : 0;
-    position: absolute;
-  }
-  
-  .menu-bg {
-    z-index: 1;
-    width: 0;
-    height: 0;
-    margin: 30px 0 20px 20px;
-    background: radial-gradient(circle, #DC052D, #DC052D);
-    border-radius: 50%;
-    transition: 0.3s ease;
-  }
-  
-  .change {
-    display: block;
-  }
-  
-  .change .bar {
-    background-color: white;
-  }
-  
-  .change #bar1 {
-    transform: translateY(4px) rotateZ(-45deg);
-  }
-  
-  .change #bar2 {
-    opacity: 0;
-  }
-  
-  .change #bar3 {
-    transform: translateY(-6px) rotateZ(45deg);
-  }
-  
-  .change-bg {
-    width: 520px;
-    height: 460px;
-    transform: translate(-60%,-30%);
-  }
-
-
-
-
-
 #underline {
     display: inline;
     position: relative;
@@ -207,6 +108,20 @@ a{
 #toggler,
 .navbar label{
     display: none;
+}
+.hamburguerr{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: alll 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 /*#####-----PRIMEIRA SEÇAO------######*/
 .caixa{
@@ -369,6 +284,8 @@ align-self: flex-start;
     padding-top: 1rem;
 }
 .colun>img{
+    height: 250px;
+    width: 100%;
     border-radius: 15px;
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
@@ -512,6 +429,7 @@ align-self: flex-start;
     width: 50%;
     padding: 20px;
 }
+
 .form-elements-stack>input{
     color: rgba(54, 54, 54, 0.5);
     font-family: var(--font-family);
@@ -763,23 +681,24 @@ input[type="checkbox"]::before {
     }
   }
 @media screen and (max-width: 600px) {
-    .menu{
-        width: 100%;
-        max-height: 0;
-        overflow: hidden;
-    }
     .list{
+        position: fixed;
         flex-direction: column;
         align-items: center;
         padding: 20px;
+        left: -100%;
+        top: 70px;
+        width: 100%;
+        transition: 0.3s;
+    }
+    .list.active{
+        left: 0;
+        background-image: linear-gradient(180deg, #300030, #480048);
     }
     .navbar label{
         display: inline-flex;
         align-items: center;
         cursor: pointer;
-    }
-    #toggler:checked ~ .menu{
-        max-height: 100%;
     }
     .conteudo-1, .conteudo-2 {
       flex: 100%;
@@ -863,5 +782,18 @@ input[type="checkbox"]::before {
         margin-top: 0;
         border-radius:0px 0px 20px 20px;
         flex-direction: column;
+    }
+    .hamburguerr{
+        display: block;
+        margin-right: 25px;
+    }
+    .hamburguerr.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburguerr.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg); 
+    }
+    .hamburguerr.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
     }
   }
