@@ -44,39 +44,6 @@ a{
     color: var(--color-white);
     font-family: var(--font-family);
 }
-/*.navbar{
-      display: flex;
-      width: 100%;
-      justify-content: space-between;
-      align-items: baseline;
-      height: 50px;
-      align-items: center;
-      flex-wrap: wrap;
-  }
-.logo{
-    flex:50%;
-}
-.nav-lista{
-    list-style: none;
-    display:flex;
-    gap: 25px;
-}
-.nav-lista,.lista{
-    justify-content: flex-end;
-    padding-right: 2.5em;
-}
-.lista{
-    align-self: flex-end;
-
-}
-#toggler,
-.navbar label{
-    display: none;
-}
-.icon-primeiro{
-    height: 45px;
-}
-*/
 .nav-ok{
     display: flex;
     flex-direction: row;
