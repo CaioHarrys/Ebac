@@ -31,7 +31,6 @@ body{
     flex-direction: row;
     background-color: whitesmoke;
     justify-content: space-between;
-    margin-top: 2em;
 }
 .nav-logo>img{
     width: 34px;
@@ -65,6 +64,19 @@ body{
 .primary-one{
     margin-top: 2em;
 }
+#text-apoio{
+    color: white;
+    font-family: var(--font-family-two);
+    font-size:18px;
+    font-weight:300;
+    text-transform: uppercase;
+}
+#texto-title{
+    color:white;
+    font-family: var(--font-family-one);
+    font-size:2em;
+    font-weight:700;
+}
 .primary-one>button{
     padding-left: 30px;
     padding-right:30px;
@@ -81,4 +93,7 @@ body{
 .primary-one>button:hover{
     background-color:#450134 ;
     box-shadow: 0px 10px 10px -10px black;
+}
+.secondary-one>img{
+    width: 200px;
 }
