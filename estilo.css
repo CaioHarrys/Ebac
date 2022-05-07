@@ -687,11 +687,17 @@ input[type="checkbox"]::before {
         height: fit-content;
         display: flex;
         flex-direction: column;
-        flex: 10%;
+        width:33.33%;
         padding: 5px;
     }
     .lado-esquerdo{
         height: auto;
+    }
+    .colun-item-1>h1{
+        font-size: 1.4em;
+    }
+    .colun-item-1>p{
+        font-size: 1em;
     }
   }
 @media screen and (max-width: 600px) {
@@ -744,6 +750,7 @@ input[type="checkbox"]::before {
         margin-left: 20px;
         margin-right: 20px;
         margin-bottom: 2vh;
+        flex-direction: column;
     }
     .colun{
         height: 100%;
