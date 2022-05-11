@@ -311,18 +311,18 @@ align-self: flex-start;
     align-items: center;
 
 }
+.conteiner-on{
+    display: flex;
+    flex-direction: row;
+    margin: 5vh;
+}
 .lado-esquerdo{
     background-color: #3321A6;
     width: 40%;
     display: flex;
     flex-direction: column;
-    margin-left: 5vh;
     height: 500px;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    border-radius: 20px 0px 0px 20px;
-    padding-top:1em;
-    padding-bottom:1em;
+    border-radius:20px 0px 0px 20px;
 }
 .lado-esquerdo>h1{
     color: var(--color-white);
@@ -379,12 +379,9 @@ align-self: flex-start;
     background-color: whitesmoke;
     width: 60%;
     display: flex;
-    margin-right: 5vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    height: 500px;
-    border-radius:0px 20px 20px 0px;
+    height: auto;
     flex-direction: column;
+    border-radius:0px 20px 20px 0px;
 }
 .esquerdo-pe{
     display: flex;
@@ -705,6 +702,10 @@ input[type="checkbox"]::before {
         width: 100%;
         height: auto;
     }
+    .conteiner-on{
+        display: flex;
+        flex-direction: column;
+    }
     .list{
         position: fixed;
         flex-direction: column;
@@ -786,12 +787,7 @@ input[type="checkbox"]::before {
         display: flex;
         flex-direction: column;
         height: auto;
-        margin-top: 5vh;
-        margin-bottom:0vh;
         border-radius: 20px 20px 0px 0px;
-        padding-top:1em;
-        margin-right: 20px;
-        margin-left: 20px;
     }
     .container-contato{
         display: flex;
@@ -804,9 +800,7 @@ input[type="checkbox"]::before {
         background-color: whitesmoke;
         width: 100%;
         display: flex;
-        margin-right: 20px;
-        margin-left: 20px;
-        margin-bottom: 5vh;
+
         height:auto;
         margin-top: 0;
         border-radius:0px 0px 20px 20px;
