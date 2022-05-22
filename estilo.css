@@ -32,6 +32,7 @@ body{
     background-image: linear-gradient(180deg, #300030, #480048);
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 ::-webkit-scrollbar{
     display: none;
@@ -314,6 +315,7 @@ align-self: flex-start;
 .conteiner-on{
     display: flex;
     flex-direction: row;
+    width:100%;
     margin: 5vh;
 }
 .lado-esquerdo{
@@ -525,6 +527,7 @@ input[type="checkbox"]::before {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    width: 100%;
 }
 .form-elements-texto{
     color: black;
@@ -747,6 +750,7 @@ input[type="checkbox"]::before {
     .conteiner-on{
         display: flex;
         flex-direction: column;
+        margin: 0 !important;
     }
     .list{
         position: fixed;
@@ -860,5 +864,8 @@ input[type="checkbox"]::before {
     }
     .hamburguerr.active .bar:nth-child(3){
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .form-elements-2-1{
+        width: 100%;
     }
   }
